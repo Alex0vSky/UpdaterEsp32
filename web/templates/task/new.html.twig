@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+	{{ form(form) }}
+	<a class="btn btn-outline-primary btn-lg" href="{{ path('admin_index') }}">Go back</a>
+	<br/><br/>
+	<div class="btn-group-toggle" data-toggle="buttons">
+		<label class="btn btn-secondary active">
+			<a class="btn btn-secondary btn-block" title='Show current version' href="{{ 'sw/version' }}">sw/version</a>
+			<a class="btn btn-secondary btn-block" title='Download current version' href="{{ 'sw/update' }}">sw/update</a>
+		</label>
+	</div>
+</div>
+{% endblock %}
